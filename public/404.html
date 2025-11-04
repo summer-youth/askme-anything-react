@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - 페이지를 찾을 수 없어요 | 물어봐이브</title>
+    <meta name="description" content="요청하신 페이지를 찾을 수 없어요." />
+    <link rel="icon" href="/favicon.ico" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: ui-sans-serif, system-ui, -apple-system, 'Noto Sans KR', sans-serif;
+        background: radial-gradient(1000px 600px at 10% 10%, rgba(124,92,255,0.15), transparent),
+                    radial-gradient(900px 500px at 90% 20%, rgba(0,212,255,0.12), transparent),
+                    #0f1115;
+        color: #e6e6e6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .container {
+        text-align: center;
+        max-width: 600px;
+      }
+      .error-code {
+        font-size: 120px;
+        font-weight: bold;
+        color: #7c5cff;
+        margin-bottom: 16px;
+        line-height: 1;
+      }
+      h1 {
+        font-size: 32px;
+        margin-bottom: 12px;
+      }
+      p {
+        color: #9aa0aa;
+        margin-bottom: 32px;
+        font-size: 18px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #7c5cff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: 600;
+        transition: background 0.2s;
+      }
+      .btn:hover {
+        background: #6245ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="error-code">404</div>
+      <h1>페이지를 찾을 수 없어요</h1>
+      <p>요청하신 페이지가 존재하지 않거나 이동되었을 수 있어요.</p>
+      <a href="/" class="btn">홈으로 돌아가기</a>
+    </div>
+    <script>
+      // SPA 리다이렉트: 3초 후 자동으로 홈으로 이동
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 3000);
+    </script>
+  </body>
+</html>
+
