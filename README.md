@@ -1,5 +1,8 @@
 ## 물어봐이브 (Mureo-Vibe)
 
+https://askme-anything-react.netlify.app/
+
+
 React (Vite) + Gemini로 만드는 인터랙티브 Q&A 웹 앱.
 
 ### 시작하기
